@@ -1,0 +1,19 @@
+server:
+  port: 8090
+
+spring:
+  liquibase:
+    user: postgres
+    password: 1234
+    change-log: 'classpath:db-migrations/changelog.xml'
+    driver-class-name: org.postgresql.Driver
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/postgres?currentSchema=taxi_service"
+    username: postgres
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+
+internal:
+  cars:
+    max-year: 10
+    offset: 5

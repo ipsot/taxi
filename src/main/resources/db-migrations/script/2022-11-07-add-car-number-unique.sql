@@ -1,0 +1,1 @@
+alter table cars Add constraint number_unique unique (number)
